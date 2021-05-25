@@ -1,0 +1,13 @@
+.footer {
+  background-color: $first-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  &__list {
+    display: flex;
+    align-items: baseline;
+  }
+  &__item:not(:first-child) {
+    padding-left: 70px;
+  }
+}
