@@ -8,6 +8,8 @@
 
   &__photo {
     display: block;
+    width: 100%;
+    max-width: 450px;
   }
   &__name {
     font-weight: 500;
@@ -23,5 +25,17 @@
   &__spec {
     color: $second-color;
     margin-bottom: 16px;
+  }
+}
+
+@media (min-width: 768px){
+  .teammate__photo {
+    max-width: 354px;
+  }
+}
+@media (min-width: 1200px){
+  .teammate__photo {
+    max-width: 270px;
+    max-height: 260px;
   }
 }

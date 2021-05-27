@@ -1,8 +1,8 @@
+.mobile-contacts {
+  text-align: left;
+  margin-bottom: 64px;
+}
 .contacts {
-  display: flex;
-  width: 321px;
-  justify-content: space-between;
-
   &__link {
     color: $second-color;
     display: flex;
@@ -34,5 +34,28 @@
 @media (max-width: 480px){
   .contacts {
     display: none;
+    
+    &__link {
+      display: inline-block;     
+      font-size: 24px;
+      line-height: 1.172;
+      margin-left: 40px;
+
+      &--accent{
+        color: $hover-color;
+        font-size: 34px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+  .mobile-contacts:first-child {
+    font-size: 34px;
+  }
+}
+@media (min-width: 481px){
+  .contacts {
+    display: flex;
+    width: 321px;
+    justify-content: space-between;
   }
 }

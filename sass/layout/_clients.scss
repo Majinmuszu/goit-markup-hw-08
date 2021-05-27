@@ -1,11 +1,11 @@
 .clients {
-  flex-basis: calc(100% / 2 - 30px);
+    
 
   &__link {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 170px;
+
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
@@ -27,8 +27,21 @@
 @media (min-width: 480px){
 
 }
-@media (min-width: 768px){
-
+@media (max-width: 768px){
+  .clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
+    
+  
+  &__item {
+    flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
 }
 @media (min-width: 1200px){
   .clients {
@@ -36,4 +49,8 @@
     justify-content: space-between;
     align-items: center;
   }  
+  .clients__link {
+    width: 170px;
+    margin: 0;
+  }
 }

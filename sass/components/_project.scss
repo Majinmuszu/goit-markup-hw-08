@@ -1,5 +1,6 @@
 .project {
   flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
 
   &__wrapper {
     position: relative;
@@ -8,6 +9,8 @@
 
   &__photo {
     display: block;
+    width: 100%;
+    height: auto;
   }
 
   &__overlay {

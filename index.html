@@ -20,10 +20,13 @@
         <a class="logo logo__header" href="index.html"
           ><span class="logo__span">Web</span>Studio</a
         >
+
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu__item">
-              <a class="menu__link menu__link--current" href="index.html">Agencja</a>
+              <a class="menu__link menu__link--current" href="index.html"
+                >Agencja</a
+              >
             </li>
             <li class="menu__item">
               <a class="menu__link" href="portfolio.html">Portfolio</a>
@@ -35,14 +38,8 @@
         </nav>
         <ul class="contacts">
           <li class="contacts__item">
-            <a
-              class="contacts__link"
-              href="mailto:info@devstudio.com"
-              ><svg
-                class="contacts__icon icon"
-                width="20px"
-                height="16px"
-              >
+            <a class="contacts__link" href="mailto:info@devstudio.com"
+              ><svg class="contacts__icon icon" width="20px" height="16px">
                 <use href="images/icons/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com</a
             >
@@ -56,15 +53,24 @@
             >
           </li>
         </ul>
-        <button mobile-menu-open type="button" class="icon-menu__button"><svg class="icon-menu icon" width="24" height="16">
-          <use href="images/icons/icons.svg#icon-menu"></use>
-        </svg></button>
+        <button mobile-menu-open type="button" class="icon-menu__button">
+          <svg class="icon-menu icon" width="24" height="16">
+            <use href="images/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-      
+
       <div mobile-menu class="mobile-menu mobile-menu--is-hidden">
+        <div mobile-menu-close class="icon-close__border">
+          <svg class="icon-close icon" width="11" height="11">
+            <use href="images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </div>
         <ul class="menu-list">
           <li class="menu__item">
-            <a class="menu__link menu__link--current" href="index.html">Agencja</a>
+            <a class="menu__link menu__link--current" href="index.html"
+              >Agencja</a
+            >
           </li>
           <li class="menu__item">
             <a class="menu__link" href="portfolio.html">Portfolio</a>
@@ -72,6 +78,28 @@
           <li class="menu__item">
             <a class="menu__link" href="#">Kontakt</a>
           </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--accent" href="tel:+48111111111">
+              +48 111 111 111</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a></li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Twitter</a></li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Facebook</a></li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">LinkedIn</a></li>
         </ul>
       </div>
     </header>
@@ -84,9 +112,7 @@
           EFEKTYWNE ROZWIĄZANIA <br />
           DLA WASZEGO BIZNESU
         </h1>
-        <button data-modal-open class="btn" type="button">
-          Zamów usługe
-        </button>
+        <button data-modal-open class="btn" type="button">Zamów usługe</button>
       </section>
 
       <!-- OKNO MODALNE -->
@@ -102,18 +128,19 @@
             Zostaw swoje dane w formularzu poniżej
           </h3>
           <form class="modal-form">
-
             <div>
               <label class="modal-form__label" for="user-name">Imię</label>
               <div class="modal-form__input-container">
                 <svg class="modal-form__icon icon" width="12" height="12">
                   <use href="images/icons/icons.svg#icon-form-name"></use>
                 </svg>
-                <input id="user-name" 
-                       type="text" 
-                       name="UserName" 
-                       class="modal-form__input"
-                       required />
+                <input
+                  id="user-name"
+                  type="text"
+                  name="UserName"
+                  class="modal-form__input"
+                  required
+                />
               </div>
             </div>
 
@@ -123,11 +150,13 @@
                 <svg class="modal-form__icon icon" width="13" height="13">
                   <use href="images/icons/icons.svg#icon-form-tel"></use>
                 </svg>
-                <input id="user-tel" 
-                       type="tel" 
-                       name="UserPhoneNumber" 
-                       class="modal-form__input"
-                       required />
+                <input
+                  id="user-tel"
+                  type="tel"
+                  name="UserPhoneNumber"
+                  class="modal-form__input"
+                  required
+                />
               </div>
             </div>
 
@@ -137,37 +166,49 @@
                 <svg class="modal-form__icon icon" width="15" height="12">
                   <use href="images/icons/icons.svg#icon-form-envelope"></use>
                 </svg>
-                <input id="user-email" 
-                       type="email" 
-                       name="UserEmailAdress" 
-                       class="modal-form__input"
-                       required />
+                <input
+                  id="user-email"
+                  type="email"
+                  name="UserEmailAdress"
+                  class="modal-form__input"
+                  required
+                />
               </div>
             </div>
 
             <div>
-              <label class="modal-form__label" for="user-comment">Komentarz</label>
+              <label class="modal-form__label" for="user-comment"
+                >Komentarz</label
+              >
               <div class="modal-form__input-container">
-                <textarea id="user-comment" 
-                          rows="5" 
-                          name="UserComments" 
-                          class="modal-form__input" 
-                          placeholder="Wprowadź tekst" ></textarea>
+                <textarea
+                  id="user-comment"
+                  rows="5"
+                  name="UserComments"
+                  class="modal-form__input"
+                  placeholder="Wprowadź tekst"
+                ></textarea>
               </div>
             </div>
 
             <div class="modal-form__checkbox-container">
-              <input id="regulations" 
-                     type="checkbox" 
-                     name="PrivacyPolicyAgreement" 
-                     class="modal-form__chkbox" 
-                     required />
+              <input
+                id="regulations"
+                type="checkbox"
+                name="PrivacyPolicyAgreement"
+                class="modal-form__chkbox"
+                required
+              />
               <label for="regulations" class="modal-form__chkbox-label"
-                  >Oświadczam iż akceptuję <a class="modal-form__chkbox-link" href="#">Regulamin</a> i <a class="modal-form__chkbox-link" href="#">Politykę Prywatności.</a></label>
+                >Oświadczam iż akceptuję
+                <a class="modal-form__chkbox-link" href="#">Regulamin</a> i
+                <a class="modal-form__chkbox-link" href="#"
+                  >Politykę Prywatności.</a
+                ></label
+              >
             </div>
 
             <button type="submit" class="modal-form__btn btn">Wyślij</button>
-
           </form>
         </div>
       </div>
@@ -282,20 +323,15 @@
               <img
                 class="teammate__photo"
                 src="images/team/team1.jpg"
+                srcset="images/team/team1_900x920.jpg 2x"
                 alt="Zdjęcie John Doe"
-                width="270"
-                height="260"
               />
               <h3 class="teammate__name">John Doe</h3>
               <p class="teammate__spec">Product Designer</p>
               <ul class="social social--teammate">
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-instagram-1"
                       ></use>
@@ -304,22 +340,14 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use href="./images/icons/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-facebook-1"
                       ></use>
@@ -328,11 +356,7 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-linkedin-1"
                       ></use>
@@ -345,20 +369,15 @@
               <img
                 class="teammate__photo"
                 src="images/team/team2.jpg"
+                srcset="images/team/team2_900x920.jpg 2x"
                 alt="Zdjęcie John Doe"
-                width="270"
-                height="260"
               />
               <h3 class="teammate__name">John Doe</h3>
               <p class="teammate__spec">Frontend Developer</p>
               <ul class="social social--teammate">
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-instagram-1"
                       ></use>
@@ -367,22 +386,14 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use href="./images/icons/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-facebook-1"
                       ></use>
@@ -391,11 +402,7 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-linkedin-1"
                       ></use>
@@ -408,20 +415,15 @@
               <img
                 class="teammate__photo"
                 src="images/team/team3.jpg"
+                srcset="images/team/team3_900x920.jpg 2x"
                 alt="Zdjęcie John Doe"
-                width="270"
-                height="260"
               />
               <h3 class="teammate__name">John Doe</h3>
               <p class="teammate__spec">Marketing</p>
               <ul class="social social--teammate">
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-instagram-1"
                       ></use>
@@ -430,22 +432,14 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use href="./images/icons/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-facebook-1"
                       ></use>
@@ -454,11 +448,7 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-linkedin-1"
                       ></use>
@@ -471,20 +461,15 @@
               <img
                 class="teammate__photo"
                 src="images/team/team4.jpg"
+                srcset="images/team/team4_900x920.jpg 2x"
                 alt="Zdjęcie John Doe"
-                width="270"
-                height="260"
               />
               <h3 class="teammate__name">John Doe</h3>
               <p class="teammate__spec">UI Designer</p>
               <ul class="social social--teammate">
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-instagram-1"
                       ></use>
@@ -493,22 +478,14 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use href="./images/icons/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-facebook-1"
                       ></use>
@@ -517,11 +494,7 @@
                 </li>
                 <li class="social__item">
                   <a href="#" class="social__link social__link--teammate">
-                    <svg
-                      class="social__icon icon"
-                      width="20px"
-                      height="20px"
-                    >
+                    <svg class="social__icon icon" width="20px" height="20px">
                       <use
                         href="./images/icons/icons.svg#icon-linkedin-1"
                       ></use>
@@ -584,9 +557,9 @@
       <div class="container">
         <ul class="footer__list">
           <li class="footer__item">
-              <a class="logo logo__footer" href="index.html"
-                ><span class="logo__span">Web</span>Studio</a
-              >
+            <a class="logo logo__footer" href="index.html"
+              ><span class="logo__span">Web</span>Studio</a
+            >
             <address class="address">
               <ul class="address__list">
                 <li class="address__item">
@@ -598,9 +571,7 @@
                   </a>
                 </li>
                 <li class="address__item">
-                  <a
-                    class="address__link"
-                    href="mailto:info@example.com"
+                  <a class="address__link" href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
@@ -617,44 +588,28 @@
             <ul class="social social--footer">
               <li class="social__item">
                 <a href="#" class="social__link">
-                  <svg
-                    class="social__icon icon"
-                    width="20px"
-                    height="20px"
-                  >
+                  <svg class="social__icon icon" width="20px" height="20px">
                     <use href="./images/icons/icons.svg#icon-instagram-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link">
-                  <svg
-                    class="social__icon icon"
-                    width="20px"
-                    height="20px"
-                  >
+                  <svg class="social__icon icon" width="20px" height="20px">
                     <use href="./images/icons/icons.svg#icon-twitter-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link">
-                  <svg
-                    class="social__icon icon"
-                    width="20px"
-                    height="20px"
-                  >
+                  <svg class="social__icon icon" width="20px" height="20px">
                     <use href="./images/icons/icons.svg#icon-facebook-1"></use>
                   </svg>
                 </a>
               </li>
               <li class="social__item">
                 <a href="#" class="social__link">
-                  <svg
-                    class="social__icon icon"
-                    width="20px"
-                    height="20px"
-                  >
+                  <svg class="social__icon icon" width="20px" height="20px">
                     <use href="./images/icons/icons.svg#icon-linkedin-1"></use>
                   </svg>
                 </a>
@@ -663,13 +618,19 @@
           </li>
           <li class="footer__item">
             <form class="newsletter">
-              <label for="nletter" class="newsletter__title">Zapisz się do newslettera</label>
+              <label for="nletter" class="newsletter__title"
+                >Zapisz się do newslettera</label
+              >
               <div class="newsletter__input-container">
-                <input id="nletter" type="email" class="newsletter__input" placeholder="E-mail" />
-                <button type="submit" class="newsletter__btn btn">Zapisz się
-                  <svg class="icon" 
-                       width="24" 
-                       height="24">
+                <input
+                  id="nletter"
+                  type="email"
+                  class="newsletter__input"
+                  placeholder="E-mail"
+                />
+                <button type="submit" class="newsletter__btn btn">
+                  Zapisz się
+                  <svg class="icon" width="24" height="24">
                     <use href="./images/icons/icons.svg#icon-send"></use>
                   </svg>
                 </button>

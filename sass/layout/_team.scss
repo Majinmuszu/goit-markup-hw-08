@@ -1,8 +1,14 @@
 .team {
   background-color: $second-background-color;
 }
-
-.team__list {
-  display: flex;
-  justify-content: space-between;
+.teammate {
+  margin-top: 30px;
 }
+ 
+@media (min-width: 481px){
+  .team__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+

@@ -20,15 +20,16 @@
         <a class="logo logo__header" href="index.html"
           ><span class="logo__span">Web</span>Studio</a
         >
+
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu-list">
             <li class="menu__item">
-              <a class="menu__link" href="index.html">Agencja</a>
+              <a class="menu__link menu__link--current" href="index.html"
+                >Agencja</a
+              >
             </li>
             <li class="menu__item">
-              <a class="menu__link menu__link--current" href="portfolio.html"
-                >Portfolio</a
-              >
+              <a class="menu__link" href="portfolio.html">Portfolio</a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Kontakt</a>
@@ -51,6 +52,54 @@
               +48 111 111 111</a
             >
           </li>
+        </ul>
+        <button mobile-menu-open type="button" class="icon-menu__button">
+          <svg class="icon-menu icon" width="24" height="16">
+            <use href="images/icons/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div mobile-menu class="mobile-menu mobile-menu--is-hidden">
+        <div mobile-menu-close class="icon-close__border">
+          <svg class="icon-close icon" width="11" height="11">
+            <use href="images/icons/icons.svg#icon-close"></use>
+          </svg>
+        </div>
+        <ul class="menu-list">
+          <li class="menu__item">
+            <a class="menu__link" href="index.html"
+              >Agencja</a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Kontakt</a>
+          </li>
+        </ul>
+        <ul class="mobile-contacts">
+          <li class="contacts__item">
+            <a class="contacts__link contacts__link--accent" href="tel:+48111111111">
+              +48 111 111 111</a
+            >
+          </li>
+          <li class="contacts__item">
+            <a class="contacts__link" href="mailto:info@devstudio.com">
+              info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="mobile-social">
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Instagram</a></li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Twitter</a></li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">Facebook</a></li>
+          <li class="mobile-social__item">
+            <a href="" class="mobile-social__link">LinkedIn</a></li>
         </ul>
       </div>
     </header>
@@ -90,9 +139,8 @@
                   <img
                     class="project__photo"
                     src="images/portfolio/portfolio-img1.jpg"
+                    srcset="images/portfolio/portfolio-img1_900x588.jpg x2"
                     alt="Zdjęcie laptopa od frontu, na ekranie widnieje strona intenetowa technocrack"
-                    width="370"
-                    height="294"
                   />
                   <div class="project__overlay">
                     <p class="project__info">
@@ -116,9 +164,8 @@
                   <img
                     class="project__photo"
                     src="images/portfolio/portfolio-img2.jpg"
+                    srcset="images/portfolio/portfolio-img2_900x588.jpg x2"
                     alt="Grafika przedstawiająca dwóch zwodników koszykówki walczących o piłkę w wyskoku"
-                    width="370"
-                    height="294"
                   />
                   <div class="project__overlay">
                     <p class="project__info">
@@ -144,9 +191,8 @@
                   <img
                     class="project__photo"
                     src="images/portfolio/portfolio-img3.jpg"
+                    srcset="images/portfolio/portfolio-img3_900x588.jpg x2"
                     alt="Grafika z rybą i napisem The Seafood Restaurant"
-                    width="370"
-                    height="294"
                   />
                   <div class="project__overlay">
                     <p class="project__info">
@@ -170,9 +216,8 @@
                 <img
                   class="project__photo"
                   src="images/portfolio/portfolio-img4.jpg"
+                  srcset="images/portfolio/portfolio-img4_900x588.jpg x2"
                   alt="Na grafice widać słuchawki wokółuszne"
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__info">
@@ -196,9 +241,9 @@
                 <img
                   class="project__photo"
                   src="images/portfolio/portfolio-img5.jpg"
+                  srcset="images/portfolio/portfolio-img5_900x588.jpg x2"
                   alt="Na grafice dwa pudełka, jedno większe - białe, drugie mniejsze - brązowe"
-                  width="370"
-                  height="294"
+
                 />
                 <div class="project__overlay">
                   <p class="project__info">
@@ -222,9 +267,8 @@
                 <img
                   class="project__photo"
                   src="images/portfolio/portfolio-img6.jpg"
+                  srcset="images/portfolio/portfolio-img6_900x588.jpg x2"
                   alt="Grafika przedstawia ekran monitora z uruchomioną stroną internetową, na niej - mapa świata i napis inspiration has no borders"
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__info">
@@ -250,9 +294,8 @@
                 <img
                   class="project__photo"
                   src="images/portfolio/portfolio-img7.jpg"
+                  srcset="images/portfolio/portfolio-img7_900x588.jpg x2"
                   alt="Magazyn otwarty na stronie z dużym nagłówkiem głoszącym I am limited style"
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__info">
@@ -278,9 +321,8 @@
                 <img
                   class="project__photo"
                   src="images/portfolio/portfolio-img8.jpg"
+                  srcset="images/portfolio/portfolio-img8_900x588.jpg x2"
                   alt="Grafika metki odzieżowej z napisem LAB EL TAG"
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__info">
@@ -304,9 +346,8 @@
                 <img
                   class="project__photo"
                   src="images/portfolio/portfolio-img9.jpg"
+                  srcset="images/portfolio/portfolio-img9_900x588.jpg x2"
                   alt="Zdjęcie laptopa z uruchoioną aplikacją Growing Business, na klawiaturze dłonie użytkownika"
-                  width="370"
-                  height="294"
                 />
                 <div class="project__overlay">
                   <p class="project__info">
@@ -427,5 +468,6 @@
         </ul>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
