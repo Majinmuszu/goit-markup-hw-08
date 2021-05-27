@@ -1,0 +1,14 @@
+.icon-menu__button {
+    padding: 0;
+    border: none;
+}
+.icon-menu:hover, 
+.icon-menu:focus {
+    color: $hover-color;
+}
+
+@media (min-width: 481px){
+    .icon-menu__button{
+      display: none;
+    }
+  }

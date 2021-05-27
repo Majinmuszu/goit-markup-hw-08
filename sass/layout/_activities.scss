@@ -23,3 +23,9 @@
   line-height: 1.143;
   letter-spacing: 0.03em;
 }
+
+@media (max-width: 1199px){
+ .activities {
+   display: none;
+ }
+}

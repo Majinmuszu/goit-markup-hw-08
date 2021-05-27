@@ -21,7 +21,7 @@
           ><span class="logo__span">Web</span>Studio</a
         >
         <nav class="menu">
-          <ul class="menu__list">
+          <ul class="menu-list">
             <li class="menu__item">
               <a class="menu__link menu__link--current" href="index.html">Agencja</a>
             </li>
@@ -54,6 +54,23 @@
               </svg>
               +48 111 111 111</a
             >
+          </li>
+        </ul>
+        <button mobile-menu-open type="button" class="icon-menu__button"><svg class="icon-menu icon" width="24" height="16">
+          <use href="images/icons/icons.svg#icon-menu"></use>
+        </svg></button>
+      </div>
+      
+      <div mobile-menu class="mobile-menu mobile-menu--is-hidden">
+        <ul class="menu-list">
+          <li class="menu__item">
+            <a class="menu__link menu__link--current" href="index.html">Agencja</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="portfolio.html">Portfolio</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#">Kontakt</a>
           </li>
         </ul>
       </div>
@@ -214,8 +231,8 @@
 
       <!--CZYM SIE ZAJMUJEMY-->
 
-      <section class="section">
-        <div class="container activities">
+      <section class="section activities">
+        <div class="container">
           <h2 class="activities__header">Czym się zajmujemy</h2>
           <ul class="activities__list">
             <li class="activities__item">
@@ -663,5 +680,6 @@
       </div>
     </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

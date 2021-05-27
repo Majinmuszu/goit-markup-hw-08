@@ -1,7 +1,7 @@
 .menu__item .menu__link--current {
   color: $hover-color;
 }
-.menu__list {
+.menu-list {
   display: flex;
   justify-content: space-between;
   margin-right: 0;
@@ -34,4 +34,11 @@
     margin-bottom: -30px;
     transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
+}
+
+@media (max-width: 480px){
+  .menu{
+    display: none;
+  }
+  
 }
