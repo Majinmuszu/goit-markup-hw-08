@@ -823,7 +823,7 @@ h2 {
   border-radius: 4px;
 }
 
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 960px) {
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -838,12 +838,19 @@ h2 {
     margin-top: 30px;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 960px) {
   .advantages__list {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     padding-top: 94px;
+  }
+
+  .advantages__item {
+    max-width: 270px;
+  }
+  .advantages__item:not(:first-child) {
+    margin-left: 30px;
   }
 }
 .activities__list {

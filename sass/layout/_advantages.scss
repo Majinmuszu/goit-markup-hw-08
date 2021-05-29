@@ -35,7 +35,7 @@
     border-radius: 4px;
   }
 }
-@media (min-width: 481px) and (max-width: 768px){
+@media (min-width: 481px) and (max-width: 960px){
   .advantages__list {
     display: flex;
     flex-wrap: wrap;
@@ -50,11 +50,17 @@
   }
 }
 
-@media (min-width: 769px){
+@media (min-width: 960px){
   .advantages__list {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
     padding-top: 94px;
+  }
+  .advantages__item {
+    max-width: 270px;
+    &:not(:first-child){
+      margin-left: 30px;
+    }
   }
 }
