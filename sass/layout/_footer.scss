@@ -8,6 +8,19 @@
     margin-top: 60px;
   }
 }
+
+@media (min-width: 481px) and (max-width: 1199px){
+  .footer {
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-evenly;
+    }
+  }
+}
+
 @media (min-width: 1200px){
   .footer {
   

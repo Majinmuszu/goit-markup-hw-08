@@ -35,13 +35,24 @@
     border-radius: 4px;
   }
 }
-@media (max-width: 480px){
-  
+@media (min-width: 481px) and (max-width: 768px){
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .advantages__item {
+    flex-basis: calc(100%/2 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
 }
 
-@media (min-width: 1200px){
+@media (min-width: 769px){
   .advantages__list {
-    width: 1200px;
+    max-width: 1200px;
     display: flex;
     justify-content: space-between;
     padding-top: 94px;

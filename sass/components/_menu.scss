@@ -14,7 +14,7 @@
   }
 }
 
-@media (max-width: 480px){
+@media (max-width: 600px){
   .menu{
     display: none;
     
@@ -34,7 +34,7 @@
   
 }
 
-@media (min-width: 481px){
+@media (min-width: 601px){
   .menu-list {
     display: flex;
     justify-content: space-between;

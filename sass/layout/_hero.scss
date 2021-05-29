@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/background/background-img.jpg);
+    url(../images/background/mobile_background_480x400.jpg);
   height: 400px;
   max-width: 1600px;
   text-align: center;
@@ -17,31 +17,55 @@
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1200px){
-  .hero {
-    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/background/background-img.jpg);
-    height: 600px;
-    padding-top: 200px;
-  
-    &__title {
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.4;
-      color: $third-color;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      margin-bottom: 30px;
-    }
-  }
-}
 @media (min-device-pixel-ratio: 2),
   (-webkit-min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background/mobile_background_960x800.jpg);
+    background-size: cover;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background/tablet_background_768x400.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     .hero {
       background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/background/background-img_960x800.jpg);
+        url(../images/background/tablet_background_1536x800.jpg);
       background-size: cover;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .hero {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/background/desktop_background_1600x600.jpg);
+    height: 600px;
+    padding-top: 200px;
+
+    &__title {
+      font-size: 44px;
+      line-height: 1.4;
+    }
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/background/desktop_background_3200x1200.jpg);
+      background-size: cover;
+    }
   }
 }

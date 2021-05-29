@@ -33,6 +33,11 @@
   }
 }
 
+@media (min-width: 481px) {
+  .newsletter__input {
+    width: 450px;
+  }
+}
 
 @media (min-width: 1200px){
 .newsletter__input {
