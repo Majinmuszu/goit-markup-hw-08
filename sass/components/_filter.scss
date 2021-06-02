@@ -12,12 +12,13 @@
   background-color: $second-background-color;
   border-radius: 4px;
   font-weight: 500;
+  width: 100%;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
   border: none;
-  padding: 6px 22px;
+  padding: 6px 0px;
 
   &:hover,
   &:focus {
@@ -37,8 +38,16 @@
       margin-top: 15px;
     }
   }
+  .filter__list {
+    margin-right: 58px;;
+  }
 }
-
+@media (min-width: 481px) {
+  .filter__button {
+    width: 100%;
+    padding: 6px 22px;
+  }
+}
 @media (min-width: 768px){
   .filter__list {
     margin-bottom: 50px;
